@@ -1,6 +1,5 @@
 1. Makefile 만드는 법
-2. git (ppush,pull,commit, 등) 명령어 알기
-3. 내 컴퓨터에 vscode랑 git 연결하기
+
 • isalpha
 • isdigit
 • isalnum
