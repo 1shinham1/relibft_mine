@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/24 16:08:56 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/06/24 19:09:30 by sinseungheo      ###   ########.fr       */
+/*   Created: 2025/06/24 18:00:56 by sinseungheo       #+#    #+#             */
+/*   Updated: 2025/06/24 18:42:24 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-int	ft_isdigit(int c)
+int	ft_isprint(int c)
 {
-	if (c >= '0' && c <= '9')
+	if (c >= 32 && c <= 126)
 	{
 		return (1);
 	}
@@ -27,8 +25,8 @@ int	ft_isdigit(int c)
 #include <stdio.h>
 
 int main(void){
-    int a[7] = {'1','0','9','a','-','H','|'};
+    int a[7] = {'1','0','9',' ','-',31,188};
     for(int i = 0; i < 7; i++){
-        printf("%d",ft_isdigit(a[i]));
+        printf("%d",ft_isprint(a[i]));
     }
 }*/
