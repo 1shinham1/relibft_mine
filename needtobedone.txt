@@ -9,8 +9,8 @@
 • strlen~
 • memset~
 • bzero~
-• memcpy
-• memmove
+• memcpy~
+• memmove~
 • strlcpy
 • strlcat
 • toupper
