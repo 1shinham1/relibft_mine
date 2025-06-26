@@ -1,13 +1,14 @@
 1. Makefile 만드는 법
+2. 해더파일 만드는 법 
 
-• isalpha
-• isdigit
-• isalnum
-• isascii
-• isprint
-• strlen
-• memset
-• bzero
+• isalpha~
+• isdigit~
+• isalnum~
+• isascii~
+• isprint~
+• strlen~
+• memset~
+• bzero~
 • memcpy
 • memmove
 • strlcpy
@@ -29,3 +30,9 @@ In order to implement the two following functions, you will use malloc():
 Part 2 - Additional functions
 
 Bonus part
+
+
+
+???질문???
+restrict에 겹치는 메모리가 할당되는 것은 100% 개발자의 잘못이고 컴퓨터의 잘못이 없다는것인가?
+왜 메모리 복사에 unsigned char를 사용해야 안전한거지?
