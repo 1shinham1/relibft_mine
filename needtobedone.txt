@@ -11,7 +11,7 @@
 • bzero~
 • memcpy~
 • memmove~
-• strlcpy
+• strlcpy~
 • strlcat
 • toupper
 • tolower
@@ -36,3 +36,15 @@ Bonus part
 ???질문???
 restrict에 겹치는 메모리가 할당되는 것은 100% 개발자의 잘못이고 컴퓨터의 잘못이 없다는것인가?
 왜 메모리 복사에 unsigned char를 사용해야 안전한거지?
+
+
+
+지식
+void*는 역참조가 어렵다. 하기 위해서는 
+(int *)p  또는 (char *)p 등으로 타입을 알려줘야한다.
+or
+*((int *)p + i) 또는 ((int *)p)[i] 형태로 쓰는 게 안전하고 명확함
+
+
+const는 읽기만하고 바꾸지 않는다.
+restrict는 다른 포인터는 겹치지하지 않겠다.
