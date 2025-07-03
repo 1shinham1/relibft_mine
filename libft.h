@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 23:27:36 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/04 00:11:48 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/04 00:43:25 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len);
 size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize);
 size_t  ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize);
 int		toupper(int c);
+int		tolower(int c);
+char	*strchr(const char *s, int c);
+char	*strrchr(const char *s, int c);
 
 #endif                //위의 #ifndef 조건의 끝을 표시

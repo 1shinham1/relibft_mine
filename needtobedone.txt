@@ -14,8 +14,8 @@
 • strlcat~
 • toupper~
 • tolower~
-• strchr
-• strrchr
+• strchr~
+• strrchr~
 • strncmp
 • memchr
 • memcmp
