@@ -1,35 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/24 01:45:18 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/03 23:45:46 by sinseungheo      ###   ########.fr       */
+/*   Created: 2025/07/03 23:53:52 by sinseungheo       #+#    #+#             */
+/*   Updated: 2025/07/04 00:11:10 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+int	toupper(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+	if (c >= 97 && c <= 122)
 	{
-		return (1);
+		return (c - 32);	
 	}
 	else
 	{
-		return (0);
+		return (c);
 	}
 }
-
-/*
-#include <stdio.h>
-int main(void)
-{
-    int a[7] = {1,'~',5,'a','b','A','`'};
-    for(int i=0;i<7;i++){
-        printf("%d",ft_isalpha(a[i]));
-    }
-}*/

@@ -6,11 +6,11 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/25 15:49:03 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/06/25 18:17:18 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/03 23:46:30 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
 {

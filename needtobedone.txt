@@ -1,5 +1,4 @@
 1. Makefile 만드는 법
-2. 해더파일 만드는 법 
 
 • isalpha~
 • isdigit~
@@ -12,9 +11,9 @@
 • memcpy~
 • memmove~
 • strlcpy~
-• strlcat
-• toupper
-• tolower
+• strlcat~
+• toupper~
+• tolower~
 • strchr
 • strrchr
 • strncmp

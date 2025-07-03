@@ -6,11 +6,11 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/25 18:30:39 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/06/25 18:36:59 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/03 23:45:16 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_bzero(void *s, size_t n)
 {

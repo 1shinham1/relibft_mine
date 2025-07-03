@@ -6,11 +6,11 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/27 00:51:56 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/06/27 03:04:02 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/03 23:46:24 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {

@@ -6,13 +6,14 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/26 23:21:25 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/06/27 00:48:35 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/03 23:46:18 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n){
+void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+{
 	int i;
 	unsigned char *d;
 	const unsigned char *s;

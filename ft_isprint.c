@@ -6,9 +6,11 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/24 18:00:56 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/06/24 18:42:24 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/03 23:46:08 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

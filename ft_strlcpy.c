@@ -6,11 +6,11 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/02 23:24:34 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/03 00:51:39 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/03 23:46:42 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
 {
