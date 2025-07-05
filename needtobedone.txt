@@ -19,16 +19,16 @@
 • strncmp~
 • memchr~
 • memcmp~
-• strnstr
+• strnstr~
 • atoi
 
 In order to implement the two following functions, you will use malloc():
 • calloc
 • strdup
 
-Part 2 - Additional functions
+Part 2 - Additional functions(11)
 
-Bonus part
+Bonus part(9)
 
 
 
