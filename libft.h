@@ -6,13 +6,14 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 23:27:36 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/05 17:57:45 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/05 18:46:33 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H       //If Not Defined LIBFT_H “LIBFT_H라는 매크로가 정의되어 있지 않다면”이라는 조건.
 #define LIBFT_H       //“LIBFT_H를 정의한다”는 의미.
 
+#include <stdlib.h>
 #include <stddef.h>
 
 int	    ft_isalpha(int c);
@@ -36,5 +37,6 @@ void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_atoi(const char *str);
+void	*calloc(size_t count, size_t size);
 
 #endif                //위의 #ifndef 조건의 끝을 표시
