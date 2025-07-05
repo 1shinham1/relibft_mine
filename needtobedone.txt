@@ -20,7 +20,7 @@
 • memchr~
 • memcmp~
 • strnstr~
-• atoi
+• atoi~
 
 In order to implement the two following functions, you will use malloc():
 • calloc
