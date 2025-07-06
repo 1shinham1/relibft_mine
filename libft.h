@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 23:27:36 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/05 18:46:33 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/06 23:21:10 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,6 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_atoi(const char *str);
 void	*calloc(size_t count, size_t size);
+char	*strdup(const char *s1);
 
 #endif                //위의 #ifndef 조건의 끝을 표시

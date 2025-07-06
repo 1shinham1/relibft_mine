@@ -23,8 +23,8 @@
 • atoi~
 
 In order to implement the two following functions, you will use malloc():
-• calloc
-• strdup
+• calloc~
+• strdup~
 
 Part 2 - Additional functions(11)
 
