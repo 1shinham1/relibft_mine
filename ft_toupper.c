@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 23:53:52 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/04 00:11:10 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 01:23:14 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	toupper(int c)
 {
 	if (c >= 97 && c <= 122)
 	{
-		return (c - 32);	
+		return (c - 32);
 	}
 	else
 	{

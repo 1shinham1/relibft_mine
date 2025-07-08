@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/04 00:48:22 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/09 00:15:23 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 01:25:36 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		{
 			return (1);
 		}
-		else if(*s1 < *s2)
+		else if (*s1 < *s2)
 		{
 			return (-1);
 		}

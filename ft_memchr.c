@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/04 22:26:34 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/05 00:57:36 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 01:33:35 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t	i;
-	char 	*s1;
+	char	*s1;
 
 	i = 0;
-	s1 = (char*)s;
+	s1 = (char *)s;
 	while (i < n && s1[i] != 0)
 	{
 		if (s1[i] == c)

@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/05 18:08:29 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/05 18:44:59 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 01:34:29 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 void	*calloc(size_t count, size_t size)
 {
 	void	*p;
-	
+
 	if (count != 0 && size > SIZE_MAX / count)
 		return (0);
 	p = malloc(count * size);
-	if(p == 0)
+	if (p == 0)
 		return (0);
-	ft_bzero(p,count * size);
+	ft_bzero (p, count * size);
 	return (p);
 }
 /*
@@ -35,7 +35,7 @@ count * size 만큼의 메모리 공간을 할당
 오버플로우가 나면? -> NULL반환.
 
 오버 플로우를 확인할떄 
-if (nmemb != 0 && size * nmemb > SIZE_MAX)          ( nmemb != 0 ->가 안전하게 나누셈을 진행하게함. )
+if (nmemb != 0 && size * nmemb > SIZE_MAX)( nmemb != 0 ->가 안전하게 나누셈을 진행하게함. )
     return NULL;
 이렇게하면 size * nmemb 에서 이미 오버ㅓ플로우가 나기 때문에 
 if (nmemb != 0 && size > SIZE_MAX / nmemb)

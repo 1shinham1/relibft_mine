@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/05 17:09:51 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/05 17:57:27 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 01:31:15 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,16 @@ int	ft_atoi(const char *str)
 	int				i;
 	long int		result;
 	char			flag;
-	
+
 	i = 0;
 	result = 0;
 	flag = 1;
-	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '\r' || str[i] == '\f' || str[i] == '\v')
+	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t'
+		|| str[i] == '\r' || str[i] == '\f' || str[i] == '\v')
 		i++;
 	if (str[i] == '-' || str[i] == '+')
 	{
-		if(str[i] == '-')
+		if (str[i] == '-')
 			flag = flag * (-1);
 		i++;
 	}
@@ -49,7 +50,8 @@ int main(void){
     };
 
     for (int i = 0; tests[i] != NULL; i++) {
-        printf("Input: \"%s\" => atoi: %d // ft_atoi: %d\n", tests[i], atoi(tests[i]),ft_atoi(tests[i]));
+        printf("Input: \"%s\" => atoi: %d // ft_atoi: %d\n", tests[i], 
+			atoi(tests[i]),ft_atoi(tests[i]));
     }
 }
 */

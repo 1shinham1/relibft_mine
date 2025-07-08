@@ -1,5 +1,3 @@
-1. Makefile 만드는 법
-
 • isalpha~
 • isdigit~
 • isalnum~

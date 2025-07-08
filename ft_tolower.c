@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/04 00:12:07 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/04 00:13:50 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 01:31:33 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	tolower(int c)
 {
 	if (c >= 65 && c <= 90)
 	{
-		return (c + 32);	
+		return (c + 32);
 	}
 	else
 	{

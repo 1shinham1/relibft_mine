@@ -6,15 +6,15 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 22:55:37 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/09 00:10:08 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 01:27:18 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
+size_t	ft_strlcat(char *restrict dst, const char *restrict src, size_t dstsize)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (dst[i] != 0)

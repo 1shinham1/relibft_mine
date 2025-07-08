@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/06 22:07:09 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/06 22:34:03 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 01:29:25 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*strdup(const char *s1)
 	ptr = (char *)calloc(ft_strlen(s1), sizeof(char));
 	if (!ptr)
 		return (0);
-	ft_strlcpy(ptr,s1,ft_strlen(s1) + 1);
+	ft_strlcpy(ptr, s1, ft_strlen(s1) + 1);
 	return (ptr);
 }
 /*

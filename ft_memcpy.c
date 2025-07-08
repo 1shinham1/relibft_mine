@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/26 23:21:25 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/09 00:08:53 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 01:34:46 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
-	size_t i;
-	unsigned char *d;
-	const unsigned char *s;
+	size_t				i;
+	unsigned char		*d;
+	const unsigned char	*s;
 
 	i = 0;
 	d = (unsigned char *)dst;
@@ -40,9 +40,6 @@ int main(void)
 	// printf("char a = %s , char b = %s\n",a,ft_memcpy(b,a,6));
 }
 */
-
-
-
 /*
 #include <string.h>
 
@@ -59,5 +56,6 @@ restrict에 겹치는 메모리가 할당되는 것은 100%개발장의 잘못�
 왜 메모리 복사에 unsigned char를 사용해야 안전한거지?
 
 unsigned char *d = (unsigned char *)dst;
-const unsigned char *s = (const unsigned char *)src;로 새로 선언하지 말고 "(unsigned char *)dst"으로 바로 while에 쓰면 안되나?
+const unsigned char *s = (const unsigned char *)src;
+로 새로 선언하지 말고 "(unsigned char *)dst"으로 바로 while에 쓰면 안되나?
 */
