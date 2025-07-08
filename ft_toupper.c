@@ -6,13 +6,13 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 23:53:52 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/09 01:23:14 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 03:22:12 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	toupper(int c)
+int	ft_toupper(int c)
 {
 	if (c >= 97 && c <= 122)
 	{

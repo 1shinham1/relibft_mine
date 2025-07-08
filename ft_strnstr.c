@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/05 15:50:35 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/09 00:15:57 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 02:45:24 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,13 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		while (strh[i] == strn[k] && i < len)
 		{
 			if (strn[k + 1] == 0)
-			{
 				return (strh + i - k);
-			}
 			i++;
 			k++;
 		}
+		i = i - k;
 		i++;
+		k = 0;
 	}
 	return (0);
 }

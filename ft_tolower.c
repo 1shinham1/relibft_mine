@@ -6,13 +6,13 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/04 00:12:07 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/09 01:31:33 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 03:22:13 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	tolower(int c)
+int	ft_tolower(int c)
 {
 	if (c >= 65 && c <= 90)
 	{

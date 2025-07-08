@@ -6,17 +6,17 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/06 22:07:09 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/09 01:29:25 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 03:30:59 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strdup(const char *s1)
+char	*ft_strdup(const char *s1)
 {
 	char	*ptr;
 
-	ptr = (char *)calloc(ft_strlen(s1), sizeof(char));
+	ptr = (char *)ft_calloc(ft_strlen(s1) + 1, sizeof(char));
 	if (!ptr)
 		return (0);
 	ft_strlcpy(ptr, s1, ft_strlen(s1) + 1);

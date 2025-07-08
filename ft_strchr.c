@@ -6,26 +6,26 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/04 00:18:46 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/09 01:19:53 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 03:39:19 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-	size_t	i;
-	size_t	len;
-	char	*ptr;
+	size_t			i;
+	size_t			len;
+	unsigned char	*ptr;
 
 	i = 0;
 	len = ft_strlen(s);
-	ptr = (char *) s;
+	ptr = (unsigned char *) s;
 	while (i <= len)
 	{
-		if (*ptr == c)
+		if (*ptr == (unsigned char) c)
 		{
-			return (ptr);
+			return ((char *)ptr);
 		}
 		ptr++;
 		i++;

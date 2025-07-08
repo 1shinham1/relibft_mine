@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/27 00:51:56 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/09 01:27:20 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 03:43:27 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,14 +18,27 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	const unsigned char	*s;
 	int					i;
 
+	if (dst == src || len == 0)
+		return (dst);
 	d = (unsigned char *)dst;
 	s = (const unsigned char *)src;
-	i = (int)len;
-	while (--i >= 0)
+	if (d > s)
 	{
-		d[i] = s[i];
+		i = (int)len;
+		while (--i >= 0)
+			d[i] = s[i];
+		return (dst);
 	}
-	return (dst);
+	else
+	{
+		i = 0;
+		while (i < (int)len)
+		{
+			d[i] = s[i];
+			i++;
+		}
+		return (dst);
+	}
 }
 /*
 #include <stdio.h>
@@ -45,5 +58,7 @@ int main(void)
 void *
 memmove(void *dst, const void *src, size_t len);
 src에서 dst로 n바이트 만큼 복사
+dst < src : 앞에서 부터 복사
+dst > src : 뒤에서 부터 복사
 -overlap이 생겨도 안전하게 복사. -> 뒤에서 부터 체움으로써 안정하게 복사함
 */

@@ -6,13 +6,13 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/05 18:08:29 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/09 01:34:29 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 03:22:51 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*calloc(size_t count, size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
 	void	*p;
 
