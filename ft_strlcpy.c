@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/02 23:24:34 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/03 23:46:42 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 00:09:32 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 size_t	ft_strlcpy(char *restrict dst, const char *restrict src, size_t dstsize)
 {
 	size_t	len;
-	int		i;
+	size_t	i;
 
 	i = 0;
 	while (*(src + i) != 0 && i < dstsize - 1 && dstsize != 0)

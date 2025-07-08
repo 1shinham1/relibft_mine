@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/04 00:18:46 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/04 00:31:44 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 00:12:47 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,20 @@
 
 char	*strchr(const char *s, int c)
 {
-	int 	i;
+	size_t 	i;
 	size_t	len;
+	char	*ptr;
 
 	i = 0;
 	len = ft_strlen(s);
+	ptr = (char*)s;
 	while (i <= len)
 	{
-		if (*s == c)
+		if (*ptr == c)
 		{
-			return (s);
+			return (ptr);
 		}
-		s++;
+		ptr++;
 		i++;
 	}
 	return (0);

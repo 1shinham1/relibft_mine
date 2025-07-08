@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/04 00:48:22 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/04 01:35:10 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/09 00:15:23 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while ((*s1 != 0 || *s2 != 0) && i < n)
