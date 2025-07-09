@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/05 18:08:29 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/09 03:22:51 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/10 02:36:52 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*p;
 
 	if (count != 0 && size > SIZE_MAX / count)
-		return (0);
+		return (NULL);
 	p = malloc(count * size);
 	if (p == 0)
-		return (0);
+		return (NULL);
 	ft_bzero (p, count * size);
 	return (p);
 }
