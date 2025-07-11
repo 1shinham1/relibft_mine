@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 00:29:52 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/11 19:01:50 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/12 01:01:11 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,8 @@ int main(void){
 	printf("psum dolor\n");
 }*/
 /*
+문자열 s1에서 start 인덱스부터 len만큼 새로운 메모리에 담아서 포인터 반납.
+
 끝에 NULL처리를 해주어야함.
 - 문자열 s 길이보다 start의 인덱스가 더 클 때 -> 아무것도 안함
 - 문자열 s 길이보다 start의 인덱스가 작을 때

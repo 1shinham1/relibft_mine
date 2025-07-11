@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/04 00:33:41 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/09 03:39:12 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/12 00:23:19 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,6 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (0);
 }
+/*
+문자열 s에서 int c를 뒤어서 부터 찾고 그 포인터를 반환함
+*/
