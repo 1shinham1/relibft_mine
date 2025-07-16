@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 17:29:11 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/16 17:38:26 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/16 18:28:22 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 void	ft_putstr_fd(char *s, int fd)
 {
 	if (!s)
-		return;
+		return ;
 	write(fd, s, ft_strlen(s));
 }

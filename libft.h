@@ -6,15 +6,15 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 23:27:36 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/16 17:40:29 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/16 18:29:05 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <unistd.h>
-#include <stdlib.h>
+# include <unistd.h>
+# include <stdlib.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

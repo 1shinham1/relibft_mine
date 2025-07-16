@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 16:18:50 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/16 16:49:39 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/16 18:30:52 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (0);
 	while (s[i] != 0)
 	{
-		ans[i] = (*f)(i,s[i]);
+		ans[i] = (*f)(i, s[i]);
 		i++;
 	}
 	return (ans);

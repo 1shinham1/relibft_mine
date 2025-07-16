@@ -6,17 +6,17 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 09:06:35 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/16 10:14:34 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/16 18:31:20 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t lenofnum(long int n)
+size_t	lenofnum(long int n)
 {
 	size_t	len;
 
-	len  = 0;
+	len = 0;
 	if (n == 0)
 		return (1);
 	if (n < 0)

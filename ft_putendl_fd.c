@@ -6,7 +6,7 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 17:32:41 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/16 17:38:08 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/16 18:29:32 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_putendl_fd(char *s, int fd)
 {
 	if (!s)
-		return;	
+		return ;
 	write(fd, s, ft_strlen(s));
 	write(fd, "\n", 1);
 }

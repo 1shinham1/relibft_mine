@@ -6,19 +6,19 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 17:39:54 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/16 18:14:50 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/16 18:28:48 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int numberofzero(long int n)
+int	numberofzero(long int n)
 {
 	int	len;
 
 	len = 0;
 	if (n == 0)
-		return (0);	
+		return (0);
 	while ((n % 10) == 0)
 	{
 		len++;

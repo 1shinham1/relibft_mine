@@ -6,13 +6,13 @@
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/12 14:33:57 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/16 09:04:19 by sinseungheo      ###   ########.fr       */
+/*   Updated: 2025/07/16 18:30:19 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char free_ans(char **ans)
+char	free_ans(char **ans)
 {
 	size_t	i;
 
@@ -32,7 +32,7 @@ size_t	count_numof_split(char const *s, char c)
 	size_t	count;
 
 	i = 0;
-	count  = 0;
+	count = 0;
 	while (s[i] != 0)
 	{
 		while (s[i] == c && s[i] != 0)
@@ -49,7 +49,7 @@ size_t	count_numof_word(const char *ptr, char c)
 {
 	size_t	count;
 
-	count  = 0;
+	count = 0;
 	while (*ptr != c && *ptr != 0)
 	{
 		count++;
@@ -73,7 +73,7 @@ char	**ft_split(char const *s, char c)
 		while (*s == c && *s != 0)
 			s++;
 		if (*s == 0)
-			break;
+			break ;
 		len = count_numof_word(s, c);
 		ans[k] = ft_calloc(len + 1, sizeof(char));
 		if (!ans[k])
