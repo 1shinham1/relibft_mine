@@ -1,29 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sinseungheon <sinseungheon@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/16 19:12:12 by sinseungheo       #+#    #+#             */
-/*   Updated: 2025/07/20 00:19:39 by sinseungheo      ###   ########.fr       */
+/*   Created: 2025/07/21 22:49:23 by sinseungheo       #+#    #+#             */
+/*   Updated: 2025/07/21 23:00:02 by sinseungheo      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft_bonus.h"
+#include "libft.h"
 
-t_list	*ft_lstnew(void *content)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list	*list;
-
-	list = (t_list *)malloc(sizeof(t_list));
-	if (!list)
-		return(0);
-	list -> content = content;
-	list -> next = 0;
-	return (list);
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }
 /*
-int main(){
-	return (0);
-}*/
+모든 content에 함수 f를 적용하는 함수
+*/
